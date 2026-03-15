@@ -1,0 +1,376 @@
+/* ========================================
+   ABOUT PAGE SPECIFIC STYLES
+   Premier Home Rentals
+   ======================================== */
+
+/* About Header */
+.about-header {
+    background-image: url('../images/651122073_122290265384027895_9046047661119987039_n.jpg');
+}
+
+/* About Intro Section */
+.about-intro-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-intro-image {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.about-intro-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-intro-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-intro-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.about-intro-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+}
+
+.about-intro-content p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-signature {
+    margin-top: 30px;
+}
+
+.about-signature img {
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Mission Vision Section */
+.mission-vision-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mv-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--secondary-color);
+}
+
+.mv-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.mv-card:hover .mv-icon {
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    transform: rotateY(360deg);
+}
+
+.mv-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.mv-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px;
+    color: var(--white);
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.why-card {
+    position: relative;
+    padding: 40px 30px;
+    background: var(--light-bg);
+    border-radius: var(--border-radius-lg);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.why-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.why-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--secondary-color);
+}
+
+.why-card:hover::before {
+    width: 100%;
+    opacity: 0.1;
+}
+
+.why-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    opacity: 0.3;
+    margin-bottom: 10px;
+}
+
+.why-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.why-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    position: relative;
+}
+
+/* Team Section */
+.team-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.team-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.team-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.1);
+}
+
+.team-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.team-info h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.team-role {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-social a {
+    width: 40px;
+    height: 40px;
+    background: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.team-social a:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-intro-image img {
+        height: 350px;
+    }
+    
+    .about-intro-content h2 {
+        font-size: 2rem;
+    }
+    
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-intro-content h2 {
+        font-size: 1.7rem;
+    }
+    
+    .mv-card {
+        padding: 30px 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
